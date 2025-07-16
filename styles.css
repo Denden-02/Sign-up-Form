@@ -1,0 +1,12 @@
+@font-face {
+    font-family: "Jua";
+    src: url("./assets/fonts/jua-regular-webfont.woff2");
+    font-weight: 400;
+}
+
+div {
+    font-family: "Jua", Arial, Helvetica, sans-serif;
+}
+
+
+
