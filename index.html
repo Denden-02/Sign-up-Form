@@ -14,36 +14,53 @@
 </head>
 <body>
     <div class="main-container">
-        <div class="img1">
-            <img src="assets/Baguio_by_Jason_Lagman.jpg" alt="Baguio city road" width="auto" height="auto">
+        <div>
+            <img id="img1" src="assets/Baguio_by_Jason_Lagman.jpg" alt="Baguio city road">
+            <!-- <figcaption>Photo by <a href="https://unsplash.com/@jaysonlagman">Jason Lagman</a></figcaption> -->
         </div>
-        <div class="img2">
-            <img src="assets/jeepney_&_niyog_Toa_Heftiba.jpg" alt="Palawan jeep">
+        <div>
+            <img id="img2" src="assets/jeepney_&_niyog_Toa_Heftiba.jpg" alt="Palawan jeep">
+            <!-- <figcaption>Photo by <a href="https://unsplash.com/@jaysonlagman">Jason Lagman</a></figcaption> -->
         </div>
         <div class="form-main">
-            
+            <p id="ads">Are you ready to be a part of a community full of rich cultures? Sign up now and explore the wonders of Philippines.</p>
             <form action="httpbin.org" method="post">
-                <label>
-                    FIRST NAME <input type="" name="" placeholder="" value="">
-                </label>
-                <label>
-                    LAST NAME <input type="" name="" placeholder="" value="">
-                </label>
-                <label>
-                    EMAIL <input type="" name="" placeholder="" value="">
-                </label>
-                <label>
-                    PHONE NUMBER <input type="" name="" placeholder="" value="">
-                </label>
-                <label>
-                    CREATE PASSWORD <input type="" name="" placeholder="" value="">
-                </label>
-                <label>
-                    CONFIRM PASSWORD <input type="" name="" placeholder="" value="">
-                </label>
-                <button type="submit">Create Account</button>
-                <div class="already">Already have an account?
-                    <a href="">Log in</a>
+                <div class="user-info">
+                    <div id="full-name">
+                        <div class="full-name">
+                            <label for="first">FIRST NAME </label>
+                            <input required pattern="^[^\d#$%&@]+$"  id="first" type="text" minlength="2" maxlength="35"  name="first" placeholder="" value="">
+                        </div>
+                        <div class="full-name">
+                            <label for="last">LAST NAME </label>
+                            <input required pattern="^[^\d#$%&@]+$" id="last" type="text" minlength="2" maxlength="35"   name="last" placeholder="" value="">
+                        </div>
+                    </div>
+                    <div id="contacts">
+                        <div class="contacts">
+                            <label for="email">EMAIL </label>
+                            <input required  id="email" type="email" name="email" placeholder="" value="">
+                        </div>
+                        <div class="contacts">
+                            <label for="number">PHONE NUMBER </label>
+                            <input required  id="number" type="tel" name="phone" placeholder="" value="">
+                        </div>
+                    </div>
+                    <div id="pwd-validation">
+                        <div class="pwd-validation">
+                            <label for="pwd">CREATE PASSWORD </label>
+                            <input required pattern="^.{8,25}$" id="pwd" type="password" name="password" placeholder="" value="">
+                        </div>
+                        <div class="pwd-validation">
+                            <label for="confpwd">CONFIRM PASSWORD </label>
+                            <input required  id="confpwd" type="password" name="confirmPassword" placeholder="" value="">
+                        </div>
+                    </div>
+                </div>
+                <div class="btn">
+                    <button type="submit"> Create Account </button>
+                </div>
+                <div class="already"> Already have an account? <a href="https://www.youtube.com/watch?v=5FbBlZdZkNs">Log in</a>
                 </div>
             </form>
         </div>
